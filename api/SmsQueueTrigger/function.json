@@ -1,0 +1,12 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "queueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "ct-sms-queue",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

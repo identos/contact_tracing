@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeeBluetoothOff"
+    android:id="@+id/navigation_graph">
+    <navigation
+        android:id="@+id/sign_up_graph"
+        app:startDestination="@id/launchFragment" >
+        <dialog
+            android:id="@+id/bluetoothSwitchDialog"
+            android:name="com.identos.contracing.ui.signup.BluetoothSwitchDialog"
+            android:label="BluetoothSwitchDialog" />
+        <fragment
+            android:id="@+id/OTPEntryFragment"
+            android:name="com.identos.contracing.ui.signup.OTPEntryFragment"
+            android:label="fragment_otp_entry"
+            tools:layout="@layout/fragment_otp_entry">
+            <action
+                android:id="@+id/action_OTPEntryFragment_to_enableBluetoothFragment"
+                app:destination="@id/enableBluetoothFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/launchFragment"
+            android:name="com.identos.contracing.ui.signup.LaunchFragment"
+            android:label="LaunchFragment"
+            tools:layout="@layout/fragment_launch_view">
+            <action
+                android:id="@+id/action_launchFragment_to_phoneEntryFragment"
+                app:destination="@id/phoneEntryFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/enableBluetoothFragment"
+            android:name="com.identos.contracing.ui.signup.EnableBluetoothFragment"
+            android:label="fragment_enable_bluetooth"
+            tools:layout="@layout/fragment_enable_bluetooth">
+            <action
+                android:id="@+id/action_enableBluetoothFragment_to_bluetoothSwitchDialog"
+                app:destination="@id/bluetoothSwitchDialog" />
+        </fragment>
+        <fragment
+            android:id="@+id/phoneEntryFragment"
+            android:name="com.identos.contracing.ui.signup.PhoneEntryFragment"
+            android:label="fragment_phone_entry"
+            tools:layout="@layout/fragment_phone_entry">
+            <action
+                android:id="@+id/action_phoneEntryFragment_to_OTPEntryFragment"
+                app:destination="@id/OTPEntryFragment" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/homeBluetoothOnFragment"
+        android:name="com.identos.contracing.ui.HomeBluetoothOnFragment"
+        android:label="fragment_home_bluetooth_on"
+        tools:layout="@layout/fragment_home_bluetooth_on" >
+        <action
+            android:id="@+id/action_homeBluetoothOn_to_contactPayloadListFragment"
+            app:destination="@id/contactPayloadListFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeBluetoothOnFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeBluetoothOnFragment_to_homeeBluetoothOff"
+            app:destination="@id/homeeBluetoothOff"
+            app:popUpTo="@id/homeBluetoothOnFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactPayloadListFragment"
+        android:name="com.identos.contracing.ui.bluetooth.ContactPayloadListFragment"
+        android:label="fragment_home_bluetooth_on"
+        tools:layout="@layout/fragment_home_bluetooth_on" >
+        <action
+            android:id="@+id/action_contactPayloadListFragment_to_homeBluetoothOnFragment3"
+            app:destination="@id/homeBluetoothOnFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/homeBluetoothOnFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeeBluetoothOff"
+        android:name="com.identos.contracing.ui.HomeeBluetoothOff"
+        android:label="fragment_homee_bluetooth_off"
+        tools:layout="@layout/fragment_homee_bluetooth_off" >
+        <action
+            android:id="@+id/action_homeeBluetoothOff_to_homeBluetoothOnFragment2"
+            app:destination="@id/homeBluetoothOnFragment"
+            app:popUpTo="@id/homeeBluetoothOff"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_homeeBluetoothOff_to_sign_up_graph"
+            app:destination="@id/sign_up_graph"
+            app:popUpTo="@id/homeeBluetoothOff"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePermissionDeniedFragment"
+        android:name="com.identos.contracing.ui.HomePermissionDeniedFragment"
+        android:label="HomePermissionDeniedFragment" />
+    <action android:id="@+id/action_global_homeeBluetoothOff"
+        app:destination="@id/navigation_graph"
+        app:popUpTo="@id/sign_up_graph"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true"/>
+</navigation>

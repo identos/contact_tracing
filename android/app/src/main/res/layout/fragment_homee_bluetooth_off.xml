@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data class="BluetoothOffFragmentBinding"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".ui.HomeeBluetoothOff">
+        <include android:id="@+id/content"
+            layout="@layout/content_bluetooth_off"/>
+    </ScrollView>
+
+</layout>

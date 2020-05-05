@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Contact Tracing</string>
+    <string name="launch_title">Help us stop the spread of COVID-19</string>
+    <string name="launch_paragraph">Enable the Ontario Ministry of Health contact you directly if you
+        have been in close contact with a case of COVID-19.</string>
+    <string name="launch_button_text">I want to help</string>
+    <string name="launch_data_info">How does this work?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help_stop_spread">Help us stop the spread of COVID-19</string>
+    <string name="button_understand">Turn on Bluetooth</string>
+    <string name="contact_tracing_explainer_text">Enable the Ontario Ministry of Health to contact you directly if you have been in close contact with a case of COVID-19.</string>
+    <string name="step_one">Step 1 of 3</string>
+    <string name="enter_your_mobile_number_to_be_contacted">Enter your mobile number to be contacted</string>
+    <string name="button_continue">Continue</string>
+    <string name="mobile_phone_number">Mobile Phone Number</string>
+    <string name="phone_entry_paragraph">The Ontario Ministry of Health will use this information only to contact you if it is needed for contact tracing.\n\n
+        We will also send you a <b>One-Time Pin (OTP)</b> to confirm that this number belongs to you, and it is correct.</string>
+    <string name="step_two">Step 2 of 3</string>
+    <string name="enter_otp">Enter your One-Time PIN(OTP)</string>
+    <string name="enter_otp_paragraph">You received a text message through the number provided in the previous step. Please check it, and enter the <b>OTP</b>.</string>
+    <string name="step_three">Step 3 of 3</string>
+    <string name="get_started_turn_on">Get Started: Turn on your Bluetooth</string>
+    <string name="enable_bluetooth_paragraph">
+        Join us against COVID-19 to help protect yourself and your community!\n\n
+        Your Bluetooth signal will identify if you are near another user of the app. This proximity data is encrypted and stored only on your phone.\n\n
+        When you ensure Bluetooth is on every time you leave your house, you help keep track of the spread of COVID-19.\n\n
+        For more information, see our FAQ.
+    </string>
+    <string name="blueetooth_dialog_title">Permissions Enabled!</string>
+    <string name="bluetooth_dialog_msg">Permissions already enabled, click OK to start contact tracing.</string>
+    <string name="allow">OK</string>
+    <string name="dont_allow">Don\'t Allow</string>
+    <string name="share_in_background_text">Share when app is running in the background</string>
+    <string name="what_happens_to_my_data">What happens to my data?</string>
+    <string name="ct_home_info_1">Keep Bluetooth on to help stop COVID-19. Continue sharing in the background to improve tracking effectiveness!</string>
+    <string name="share_with_friends">Share this app with family and friends.</string>
+    <string name="ct_home_info_2">Contact tracing is more effective when more people are using the app.</string>
+    <string name="share_button_txt">Share Contacts</string>
+    <string name="share_app_txt">Share This App</string>
+    <string name="bluetooth_symbol">bluetooth symbol</string>
+    <string name="ct_home_info_3">If you test positive, then tap to learn how to share your contacts. For more info, see our FAQ.</string>
+    <string name="ct_home_title">You are participating in contact tracing</string>
+    <string name="turn_on_bluetooth">Turn on Bluetooth</string>
+    <string name="bluetooth_off_title">Fight against COVID-19 and keep Bluetooth on</string>
+    <string name="bluetooth_off_text">When you keep Bluetooth on, you protect you, your loved ones and the community from getting infected. Contact tracing only works when more people use the app.</string>
+    <string name="bluetooth_off_image">bluetooth off image</string>
+    <string name="otp">OTP</string>
+    <string name="refresh_button">Button</string>
+    <string name="reset">Reset</string>
+    <string name="close">close</string>
+    <string name="protect_your_community">Protect you and your community, and stop the infection by turning on Bluetooth.</string>
+    <string name="launch_paragraph_2">Protect you and your community, and stop the infeectiion by turning on Bluetooth</string>
+    <string name="registration_error_msg">Error completing device registration using this number</string>
+    <string name="otp_error_msg">Error confirming device registration with OTP entered</string>
+    <string name="no_permission_to_connect">You have not allowed permission to connect.</string>
+    <string name="no_permission_msg">When you allow permission to connect to the app, you help contact tracing to do its job to slow down the spread of COVID-19 and prevent further infections.</string>
+    <string name="allow_permission_btn">Allow Permission</string>
+    <string name="ble_rationale_msg">Coarse Location permission needed for Bluetooth Low Energy to work. Allowing access enables the discovery of other devices. This
+        proximity data is encrypted and stored only on your phone.</string>
+    <string name="clear">Clear</string>
+    <string name="rescan">ReScan</string>
+</resources>
